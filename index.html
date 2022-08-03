@@ -13,6 +13,7 @@
 			padding: 0;
 			margin: 0;
 			height: 100%;
+			font-family: Arial, sans-serif;
 		}
 
 		body {
@@ -27,25 +28,25 @@
 			margin: 0 auto auto auto;
 		}
 
-		ul {
+		#top ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
 		}
 
-		li {
+		#top li {
 			float: left;
 		}
 
-		li a {
+		#top li a {
 			display: block;
 		}
 
-		li a:hover {
+		#top li a:hover {
 			box-shadow: 5px 10px 18px #888888;
 		}
 
-		li div {
+		#top li div {
 			width: 14em;
 			height: 14em;
 		}
@@ -61,15 +62,29 @@
 			margin: 5em 0 0 200px;
 		}
 
+		#about {
+			margin-top: 15em;
+		}
+
+		#about ul {
+			list-style-type: "-  ";
+		}
+
+		#about header {
+			position: absolute;
+			flex: 1 0 auto;
+			margin-left: 200px;
+		}
+
 		footer {
 			flex-shrink: 0;
 			padding: 2em;
-			margin-top: 15em;
+			margin-top: 15em;	
 		}
 		</style>
 	</head>
 	<body>
-		<section>
+		<section id="top">
 			<header>
 				<h1><img src="./assets/apple-touch-icon.png" alt="SiteNetSoft"></h1>
 			</header>
@@ -96,6 +111,43 @@
 						</a>
 					</li>
 				</ul>
+			</div>
+		</section>
+		<section id="about">
+			<header>
+				<h2>About</h2>
+			</header>
+			<div class="content">
+				<p>For us, it is all about teamwork and information technology.</p>
+
+				<p>We have worked in web development, enterprise systems management and development, software engineering, cloud computing, and Linux system administration.</p>
+
+				<p>As a team, we are here to bring the best information technology has to offer to any industry that needs an upgrade.</p>
+
+				<p>Here is a list of systems that we use: </p>
+
+				<ul>
+					<li>Linux (Debian, Red Hat, Qubes OS)</li>
+					<li>Cloud</li>
+					<li>Big Data</li>
+					<li>Database (RDBMS, Graph DB, etc.)</li>
+					<li>Streaming (Real Time, Near Time)</li>
+					<li>Internal search engines</li>
+					<li>Security management</li>
+					<li>Multimedia framework</li>
+					<li>ETL (Extract, Transform, Load)</li>
+					<li>CI/CD</li>
+					<li>Front-End</li>
+					<li>Identity management</li>
+					<li>ERP (Enterprise Resource Planning)</li>
+					<li>ESB (Enterprise Service Bus)</li>
+					<li>CRM (Customer Relationship Management)</li>
+					<li>CMS (Content Management System)</li>
+					<li>Asset management</li>
+					<li>SaaS</li>
+				</ul>
+
+				<p>With our experiences and all these technologies, we can build a more robust and efficient future so that no one is left behind.</p>
 			</div>
 		</section>
 		<footer>Copyright © SiteNetSoft</footer>
