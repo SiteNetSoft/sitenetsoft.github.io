@@ -55,9 +55,8 @@
 			height: 14em;
 		}
 
-		header {
+		#top header {
 			position: fixed;
-			float: left;
 		}
 
 		.content {
@@ -75,7 +74,6 @@
 		}
 
 		#about header {
-			position: absolute;
 			flex: 1 0 auto;
 			margin-left: 200px;
 		}
@@ -87,8 +85,17 @@
 		}
 
 		@media only screen and (max-width:683px) {
+			#top header {
+				position: absolute;
+			}
+
 			section {
 				width: 450px;
+			}
+
+			.content {
+				margin-left: 0;
+				padding: 0 2em 0 2em;
 			}
 		}
 
