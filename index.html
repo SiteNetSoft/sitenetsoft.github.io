@@ -1,163 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-		<title>SiteNetSoft</title>
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
-		<link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
-		<!--<link rel="icon" type="image/png" href="-96x96.png" sizes="96x96">-->
-		<link rel="icon" type="image/png" href="assets/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="assets/android-chrome-512x512.png" sizes="512x512">
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/apple-touch-icon.png">
-		<meta property="og:image" content="assets/android-chrome-512x512.png">
-		<meta name="Keywords" content="software, technology, ERP, ESB, CMS">
-		<meta name="Description" content="SiteNetSoft is a industry agnostic software company (ERPs, ESBs, CMS, etc.).">
-		<style>
-		html, body {
-			padding: 0;
-			margin: 0;
-			height: 100%;
-			font-family: Arial, sans-serif;
-		}
-
-		body {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-		}
-
-		section {
-			width: 42em;
-			text-align: left;
-			margin: 0 auto auto auto;
-		}
-
-		#top img {
-			width: 5em;
-		}
-
-		#top ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
-
-		#top li {
-			float: left;
-		}
-
-		#top li a {
-			display: block;
-		}
-
-		#top li a:hover {
-			box-shadow: 5px 10px 18px #888888;
-		}
-
-		#top li div {
-			width: 14em;
-			height: 14em;
-		}
-
-		#top header {
-			position: fixed;
-		}
-
-		.content {
-			flex: 1 0 auto;
-			float: right;
-			margin: 5em 0 0 200px;
-		}
-
-		#about {
-			margin-top: 5em;
-		}
-
-		#about ul {
-			list-style-type: "-  ";
-		}
-
-		#about header {
-			flex: 1 0 auto;
-			margin-left: 200px;
-		}
-
-		#about .content {
-			margin-top: 0;
-		}
-
-		footer {
-			flex-shrink: 0;
-			padding: 2em;
-			margin-top: 10em;
-		}
-
-		@media only screen and (max-width:683px) {
-			#top header {
-				width: 100%;
-				text-align: center;
-				position: relative;
-			}
-
-			#top {
-				width: 288px;
-			}
-
-			#top .content {
-				margin-top: 5em;
-			}
-
-			#about header {
-				margin-left: 32px;
-			}
-
-			#about .content {
-				margin-top: 0;
-			}
-
-			#about {
-				width: auto;
-			}
-
-			.content {
-				margin-left: 0;
-				padding: 0 2em 0 2em;
-			}
-		}
-
-		/*@media only screen and (max-width:450px) {
-			section {
-				width: 450em;
-			}
-		}*/
-		</style>
-	</head>
-	<body>
-		<section id="top">
-			<header>
-				<h1><img src="./assets/apple-touch-icon.png" alt="SiteNetSoft"></h1>
-			</header>
-			<div class="content">
-				<ul>
-					<li>
-						<a href="https://amadla.org/" title="Amadla">
-							<div style="background-image: url(./assets/amadla/amadla-logo.svg);"></div>
-						</a>
-					</li>
-				</ul>
-			</div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SiteNetSoft — Business software, built in the open</title>
+	<meta name="description" content="SiteNetSoft is an industry-agnostic software company building open source Quarkus extensions, web protocol implementations, and developer tooling.">
+	<link rel="canonical" href="https://sitenetsoft.org/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="SiteNetSoft">
+	<meta property="og:description" content="Business software, built in the open — Quarkus extensions, web protocol implementations, and developer tooling.">
+	<meta property="og:url" content="https://sitenetsoft.org/">
+	<meta property="og:image" content="https://sitenetsoft.org/assets/android-chrome-512x512.png">
+	<link rel="icon" href="favicon.ico" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/android-chrome-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<header class="hero">
+		<img class="hero-logo" src="assets/SiteNetSoft-Logo.png" alt="" width="120" height="120">
+		<h1 class="hero-title">SiteNetSoft</h1>
+		<p class="hero-tagline">Business software, built in the open.</p>
+		<p class="hero-intro">SiteNetSoft is an industry-agnostic software company. Alongside our commercial work we develop open source building blocks — Quarkus extensions, web protocol implementations, and developer tooling. This site is the index: each project keeps its own documentation in its own space.</p>
+		<a class="hero-link" href="https://github.com/SiteNetSoft">github.com/SiteNetSoft</a>
+	</header>
+	<main>
+		<section class="section" aria-labelledby="projects-title">
+			<h2 class="section-title" id="projects-title">Open source projects</h2>
+			<p class="section-note">Each project owns its own path on sitenetsoft.org and publishes its own documentation there.</p>
+			<ul class="card-grid">
+				<li class="card">
+					<a class="card-link" href="https://github.com/SiteNetSoft/quarkus-tus">
+						<span class="card-top">
+							<span class="card-name">/quarkus-tus</span>
+							<span class="chip" data-status="experimental">experimental</span>
+						</span>
+						<span class="card-desc">Quarkus extension for the tus resumable-upload protocol — client and server.</span>
+					</a>
+				</li>
+				<li class="card">
+					<a class="card-link" href="https://github.com/SiteNetSoft/quarkus-pha">
+						<span class="card-top">
+							<span class="card-name">/quarkus-pha</span>
+							<span class="chip" data-status="in-progress">in progress</span>
+						</span>
+						<span class="card-desc">Quarkus extension for pha-kit — PatternFly, HTMX, and Alpine.js with Qute templates.</span>
+					</a>
+				</li>
+				<li class="card">
+					<a class="card-link" href="https://github.com/SiteNetSoft/quarkus-vdp">
+						<span class="card-top">
+							<span class="card-name">/quarkus-vdp</span>
+							<span class="chip" data-status="in-progress">in progress</span>
+						</span>
+						<span class="card-desc">Quarkus extension for the View Descriptor Protocol.</span>
+					</a>
+				</li>
+				<li class="card">
+					<a class="card-link" href="https://github.com/SiteNetSoft/htmx-tus">
+						<span class="card-top">
+							<span class="card-name">/htmx-tus</span>
+							<span class="chip" data-status="experimental">experimental</span>
+						</span>
+						<span class="card-desc">HTMX extension for the tus client protocol.</span>
+					</a>
+				</li>
+				<li class="card">
+					<a class="card-link" href="https://github.com/SiteNetSoft/olinguito-odata4">
+						<span class="card-top">
+							<span class="card-name">/olinguito-odata4</span>
+							<span class="chip" data-status="upcoming">upcoming</span>
+						</span>
+						<span class="card-desc">OData 4 tooling — active development currently spread across branches.</span>
+					</a>
+				</li>
+				<li class="card">
+					<a class="card-link" href="https://github.com/SiteNetSoft/ai-skills">
+						<span class="card-top">
+							<span class="card-name">/ai-skills</span>
+							<span class="chip" data-status="active">active</span>
+						</span>
+						<span class="card-desc">Public, tool-agnostic AI skill files for dev practices and writing.</span>
+					</a>
+				</li>
+				<li class="card">
+					<a class="card-link" href="https://github.com/SiteNetSoft/resources">
+						<span class="card-top">
+							<span class="card-name">/resources</span>
+							<span class="chip" data-status="active">active</span>
+						</span>
+						<span class="card-desc">Shared images and other static files.</span>
+					</a>
+				</li>
+			</ul>
 		</section>
-		<section id="about">
-			<header>
-				<h2>About</h2>
-			</header>
-			<div class="content">
-				<p></p>
-			</div>
+		<section class="section" aria-labelledby="family-title">
+			<h2 class="section-title" id="family-title">Family</h2>
+			<p class="section-note">Organizations in the SiteNetSoft family, each with its own projects and site.</p>
+			<ul class="org-grid">
+				<li class="org-card">
+					<img class="org-logo" src="assets/amadla/amadla-logo.svg" alt="" width="56" height="56">
+					<div>
+						<h3 class="org-name">Amadla</h3>
+						<p class="org-desc">Simplifying infrastructure management.</p>
+						<p class="org-links">
+							<a href="https://github.com/AmadlaOrg">github.com/AmadlaOrg</a>
+						</p>
+					</div>
+				</li>
+				<li class="org-card">
+					<div>
+						<h3 class="org-name">View Descriptor Protocol</h3>
+						<p class="org-desc">A standard integrating REST principles with dynamic view management.</p>
+						<p class="org-links">
+							<a href="https://vdprotocol.org/">vdprotocol.org</a>
+							<a href="https://github.com/ViewDescriptorProtocol">github.com/ViewDescriptorProtocol</a>
+						</p>
+					</div>
+				</li>
+			</ul>
 		</section>
-		<footer>Copyright © SiteNetSoft</footer>
-	</body>
+	</main>
+	<footer class="site-footer">
+		<p>© SiteNetSoft · <a href="https://github.com/SiteNetSoft">GitHub</a></p>
+	</footer>
+</body>
 </html>
