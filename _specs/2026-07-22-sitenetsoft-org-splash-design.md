@@ -13,8 +13,11 @@ each project repo enables GitHub Pages and automatically owns
 
 ## Scope & stack
 
-- Hand-crafted static site: one `index.html`, one `assets/css/main.css`.
-- No JavaScript, no build step, no framework, no generator.
+- Hand-crafted static site: one `index.html`, one `assets/css/main.css`, one
+  `assets/js/theme.js`.
+- No build step, no framework, no generator. JavaScript is limited to the optional
+  color-scheme toggle (vanilla JS, progressive enhancement — without JS the page
+  follows the OS preference and the toggle button stays hidden).
 - Current `index.html` is replaced entirely.
 - `CNAME` changes from `sitenetsoft.com` to `sitenetsoft.org` (canonical domain;
   sitenetsoft.com may redirect at the DNS level, outside this repo's scope).
@@ -46,8 +49,8 @@ each project repo enables GitHub Pages and automatically owns
 
 3. **Family** — orgs listed as single entries only, never their sub-projects:
    - **Amadla** — amadla logo (`assets/amadla/amadla-logo.svg`), "Simplifying
-     infrastructure management", link to https://github.com/AmadlaOrg only
-     (amadla.org is still in the works — no link yet).
+     infrastructure management", links to https://amadla.org/ and
+     https://github.com/AmadlaOrg.
    - **View Descriptor Protocol (VDP)** — "A standard integrating REST principles with
      dynamic view management", links to https://vdprotocol.org/ and
      https://github.com/ViewDescriptorProtocol.
@@ -58,6 +61,11 @@ each project repo enables GitHub Pages and automatically owns
 - Clean, typography-led, minimal; logo blue as accent color in both themes.
 - Automatic light/dark via `prefers-color-scheme`; design tokens as CSS custom
   properties.
+- Manual scheme toggle (system → light → dark) persisted in localStorage under
+  `pha-color-scheme` with values `system | light | dark` — the same key/values
+  quarkus-pha uses, so the choice stays consistent across sitenetsoft.org and
+  same-origin project docs. An early inline script applies the stored choice
+  before first paint via `data-theme` on `<html>`.
 - Mobile-first; CSS grid for card layouts; system font stack.
 - Subtle fade-up entrance animation on the hero, guarded by `prefers-reduced-motion`.
 - Low-specificity class selectors; `:focus-visible` styles; semantic landmarks and alt
@@ -66,8 +74,17 @@ each project repo enables GitHub Pages and automatically owns
 ## Meta / SEO
 
 - Canonical `https://sitenetsoft.org/`.
-- Updated meta description; Open Graph tags using the existing 512px icon.
-- Existing favicon set retained.
+- Updated meta description; Open Graph tags (incl. site_name, image dimensions/alt) and
+  Twitter `summary_large_image` card using a dedicated 1200×630 `assets/og-banner.png`
+  (dark background, logo + wordmark + tagline).
+- Vector logo `assets/sitenetsoft-logo.svg` rebuilt from the mark's original
+  construction — per wing, an eccentric circle-in-circle cut by a rectangle, with a
+  1.5px hairline border (#082335) matching the PNG — used for the hero,
+  SVG favicon, and Safari `mask-icon`; PNG favicon set retained as fallback;
+  `site.webmanifest` with 192/512 icons; light/dark `theme-color` metas; JSON-LD
+  Organization structured data.
+- `robots.txt` + single-URL `sitemap.xml`; styled `404.html` (noindex) that also covers
+  paths of projects that haven't published docs yet.
 
 ## Constraints
 

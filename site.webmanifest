@@ -1,0 +1,21 @@
+{
+	"name": "SiteNetSoft",
+	"short_name": "SiteNetSoft",
+	"description": "Business software, built in the open — Quarkus extensions, web protocol implementations, and developer tooling.",
+	"start_url": "/",
+	"display": "browser",
+	"background_color": "#f6f9fb",
+	"theme_color": "#2183c5",
+	"icons": [
+		{
+			"src": "assets/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "assets/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

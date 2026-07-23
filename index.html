@@ -7,19 +7,55 @@
 	<meta name="description" content="SiteNetSoft is an industry-agnostic software company building open source Quarkus extensions, web protocol implementations, and developer tooling.">
 	<link rel="canonical" href="https://sitenetsoft.org/">
 	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="SiteNetSoft">
 	<meta property="og:title" content="SiteNetSoft">
 	<meta property="og:description" content="Business software, built in the open — Quarkus extensions, web protocol implementations, and developer tooling.">
 	<meta property="og:url" content="https://sitenetsoft.org/">
-	<meta property="og:image" content="https://sitenetsoft.org/assets/android-chrome-512x512.png">
+	<meta property="og:image" content="https://sitenetsoft.org/assets/og-banner.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="SiteNetSoft — Business software, built in the open.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="SiteNetSoft">
+	<meta name="twitter:description" content="Business software, built in the open — Quarkus extensions, web protocol implementations, and developer tooling.">
+	<meta name="twitter:image" content="https://sitenetsoft.org/assets/og-banner.png">
+	<meta name="theme-color" content="#f6f9fb" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#0e161d" media="(prefers-color-scheme: dark)">
+	<link rel="icon" type="image/svg+xml" href="assets/sitenetsoft-logo.svg">
 	<link rel="icon" href="favicon.ico" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
 	<link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="assets/android-chrome-192x192.png" sizes="192x192">
 	<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+	<link rel="mask-icon" href="assets/sitenetsoft-logo.svg" color="#2183c5">
+	<link rel="manifest" href="site.webmanifest">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "SiteNetSoft",
+		"url": "https://sitenetsoft.org/",
+		"logo": "https://sitenetsoft.org/assets/android-chrome-512x512.png",
+		"sameAs": ["https://github.com/SiteNetSoft"]
+	}
+	</script>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script>
+		(function () {
+			var s = localStorage.getItem("pha-color-scheme");
+			if (s === "light" || s === "dark") document.documentElement.dataset.theme = s;
+		})();
+	</script>
+	<script src="assets/js/theme.js" defer></script>
 </head>
 <body>
+	<button class="theme-toggle" id="theme-toggle" type="button" hidden>
+		<svg class="icon-system" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M 12 3 a 9 9 0 0 1 0 18 Z" fill="currentColor" stroke="none"/></svg>
+		<svg class="icon-light" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+		<svg class="icon-dark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+	</button>
 	<header class="hero">
-		<img class="hero-logo" src="assets/SiteNetSoft-Logo.png" alt="" width="120" height="120">
+		<img class="hero-logo" src="assets/sitenetsoft-logo.svg" alt="" width="120" height="120">
 		<h1 class="hero-title">SiteNetSoft</h1>
 		<p class="hero-tagline">Business software, built in the open.</p>
 		<p class="hero-intro">SiteNetSoft is an industry-agnostic software company. Alongside our commercial work we develop open source building blocks — Quarkus extensions, web protocol implementations, and developer tooling. This site is the index: each project keeps its own documentation in its own space.</p>
@@ -42,7 +78,7 @@
 				<li class="card">
 					<a class="card-link" href="https://github.com/SiteNetSoft/quarkus-pha">
 						<span class="card-top">
-							<span class="card-name">/quarkus-pha</span>
+							<span class="card-name"><svg class="card-icon" viewBox="0 0 512 512" width="20" height="20" aria-hidden="true" focusable="false"><polygon class="hex" points="256,52 434,155 434,357 256,460 78,357 78,155" fill="none" stroke-width="26" stroke-linejoin="round"/><g stroke-linejoin="round" stroke-width="12"><path d="M 140 316 L 382 316 L 396 352 L 126 352 Z" fill="#0066CC" stroke="#0066CC"/><path d="M 178 220 L 197 220 L 235 265 L 260 220 L 351 220 L 379 300 L 141 300 Z" fill="#4695EB" stroke="#4695EB"/><path d="M 315 118 L 344 200 L 270 200 Z" fill="#7BC9DB" stroke="#7BC9DB"/></g></svg>/quarkus-pha</span>
 							<span class="chip" data-status="in-progress">in progress</span>
 						</span>
 						<span class="card-desc">Quarkus extension for pha-kit — PatternFly, HTMX, and Alpine.js with Qute templates.</span>
@@ -69,7 +105,7 @@
 				<li class="card">
 					<a class="card-link" href="https://github.com/SiteNetSoft/olinguito-odata4">
 						<span class="card-top">
-							<span class="card-name">/olinguito-odata4</span>
+							<span class="card-name"><img class="card-icon card-icon--tile" src="assets/olinguito-odata4/olinguito.png" alt="" width="20" height="20">/olinguito-odata4</span>
 							<span class="chip" data-status="upcoming">upcoming</span>
 						</span>
 						<span class="card-desc">OData 4 tooling — active development currently spread across branches.</span>
@@ -78,7 +114,7 @@
 				<li class="card">
 					<a class="card-link" href="https://github.com/SiteNetSoft/ai-skills">
 						<span class="card-top">
-							<span class="card-name">/ai-skills</span>
+							<span class="card-name"><svg class="card-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M 11 3 L 13 9 L 19 11 L 13 13 L 11 19 L 9 13 L 3 11 L 9 9 Z"/><path d="M 18.5 15.5 L 19.4 18 L 21.5 19 L 19.4 20 L 18.5 22 L 17.6 20 L 15.5 19 L 17.6 18 Z"/></svg>/ai-skills</span>
 							<span class="chip" data-status="active">active</span>
 						</span>
 						<span class="card-desc">Public, tool-agnostic AI skill files for dev practices and writing.</span>
@@ -87,7 +123,7 @@
 				<li class="card">
 					<a class="card-link" href="https://github.com/SiteNetSoft/resources">
 						<span class="card-top">
-							<span class="card-name">/resources</span>
+							<span class="card-name"><svg class="card-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M 5 17 L 9.5 11.5 L 12.5 15 L 15 12 L 19 17"/></svg>/resources</span>
 							<span class="chip" data-status="active">active</span>
 						</span>
 						<span class="card-desc">Shared images and other static files.</span>
@@ -105,11 +141,23 @@
 						<h3 class="org-name">Amadla</h3>
 						<p class="org-desc">Simplifying infrastructure management.</p>
 						<p class="org-links">
+							<a href="https://amadla.org/">amadla.org</a>
 							<a href="https://github.com/AmadlaOrg">github.com/AmadlaOrg</a>
 						</p>
 					</div>
 				</li>
 				<li class="org-card">
+					<img class="org-logo" src="assets/cloocard/cloocard-appicon.svg" alt="" width="56" height="56">
+					<div>
+						<h3 class="org-name">ClooCard</h3>
+						<p class="org-desc">Portable identity records with per-field privacy.</p>
+						<p class="org-links">
+							<a href="https://github.com/ClooCard">github.com/ClooCard</a>
+						</p>
+					</div>
+				</li>
+				<li class="org-card">
+					<img class="org-logo" src="assets/vdp/vdp-logo.png" alt="" width="56" height="56">
 					<div>
 						<h3 class="org-name">View Descriptor Protocol</h3>
 						<p class="org-desc">A standard integrating REST principles with dynamic view management.</p>

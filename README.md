@@ -5,7 +5,11 @@
 Source for [sitenetsoft.org](https://sitenetsoft.org/) — the index and introduction for
 SiteNetSoft's open source work.
 
-- Static HTML/CSS, no build step. Edit `index.html` and `assets/css/main.css` directly.
+- Static HTML/CSS with a small vanilla-JS color-scheme toggle, no build step. Edit
+  `index.html`, `assets/css/main.css`, and `assets/js/theme.js` directly.
+- The scheme choice persists in localStorage under `pha-color-scheme` (values
+  `system | light | dark`), shared with quarkus-pha-based docs on the same origin so
+  the selection stays consistent across `sitenetsoft.org/*`.
 - Served by GitHub Pages with the custom domain in `CNAME`.
 - This repo hosts only the root page. Each project repo publishes its own documentation
   via its own GitHub Pages site, which appears at `sitenetsoft.org/<repo-name>`.
