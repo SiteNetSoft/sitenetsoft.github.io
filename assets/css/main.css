@@ -194,7 +194,11 @@ a:hover { text-decoration-thickness: 2px; }
 
 .card-top {
   display: flex;
-  align-items: baseline;
+  /* Centred, not baseline: .card-name is an inline-flex box, so cards with an
+     icon synthesise a different baseline than text-only cards and their chips
+     sat a few pixels lower. Both name variants are one line-height tall, so
+     centring lines every chip up. */
+  align-items: center;
   justify-content: space-between;
   gap: var(--space-2);
   flex-wrap: wrap;
