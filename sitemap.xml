@@ -3,4 +3,19 @@
 	<url>
 		<loc>https://sitenetsoft.org/</loc>
 	</url>
+	<url>
+		<loc>https://sitenetsoft.org/quarkus-pha/</loc>
+	</url>
+	<url>
+		<loc>https://sitenetsoft.org/htmx-ext-tus/</loc>
+	</url>
+	<url>
+		<loc>https://sitenetsoft.org/quarkus-tus/</loc>
+	</url>
+	<url>
+		<loc>https://sitenetsoft.org/quarkus-topaz/</loc>
+	</url>
+	<url>
+		<loc>https://sitenetsoft.org/quarkus-libphonenumber/</loc>
+	</url>
 </urlset>
